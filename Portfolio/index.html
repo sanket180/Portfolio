@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+  <div class="container">
+      <!-- Brand/logo -->
+      <a class="navbar-brand fw-bold" href="#">Sanket Dhotre</a>
+      
+      <!-- Toggle button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+  
+  
+
+<!-- Main Section Wrapper -->
+<section class="main-section container-fluid d-flex align-items-center" data-aos="fade-up">
+  <div class="row w-100">
+    <!-- Header Section on Left -->
+    <div class="col-lg-6 d-flex flex-column justify-content-center text-light header-section p-5">
+      <h1 class="display-4 fw-bold">Hi, I'm <span class="highlight">Sanket Dhotre</span></h1>
+      <p class="lead">A passionate Web Developer creating modern digital experiences</p>
+      <a href="assets/SANKET_CV.pdf" download="SANKET_CV" class="btn btn-primary btn-lg mt-3">Download CV</a>
+    </div>
+
+    <!-- About Me Section on Right -->
+    <div class="col-lg-6 about-section p-5 d-flex flex-column justify-content-center ">
+      <h2 class="display-5 fw-bold">About Me</h2>
+      <p>I'm a dedicated developer specializing in both front-end and back-end development. With over three years of experience, I focus on building user-centered applications with a modern design.</p>
+      <p>I enjoy working with technologies like JavaScript, React, Node.js, and more, constantly learning and adapting to new trends in the web development landscape.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section py-5">
+  <div class="container">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div class="row">
+          <!-- Skill Item 1 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="skill-item text-center">
+                  <img src="assets/html-5.png" alt="HTML" class="skill-icon mb-3">
+                  <h4>HTML</h4>
+                  <p>Experienced in creating semantic and accessible HTML structures.</p>
+              </div>
+          </div>
+          <!-- Skill Item 2 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="skill-item text-center">
+                  <img src="assets/css.png" alt="CSS" class="skill-icon mb-3">
+                  <h4>CSS</h4>
+                  <p>Skilled in responsive design, animations, and CSS frameworks like Bootstrap.</p>
+              </div>
+          </div>
+          <!-- Skill Item 3 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="skill-item text-center">
+                  <img src="assets/js.png" alt="JavaScript" class="skill-icon mb-3">
+                  <h4>JavaScript</h4>
+                  <p>Proficient in JavaScript for dynamic and interactive web applications.</p>
+              </div>
+          </div>
+          <!-- Add more skill items as needed -->
+      </div>
+  </div>
+</section>
+
+
+  
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section py-5">
+  <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+          <!-- Project Item 1 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="project-item text-center">
+                  <img src="path/to/project1-icon.png" alt="Project 1" class="project-icon mb-3">
+                  <h4>WowTaxi</h4>
+                  <p>UX design of a ride-hailing platform connecting drivers and passengers.</p>
+              </div>
+          </div>
+          <!-- Project Item 2 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="project-item text-center">
+                  <img src="path/to/project2-icon.png" alt="Project 2" class="project-icon mb-3">
+                  <h4>Block Expert</h4>
+                  <p>A secure blockchain-based solution for data storage.</p>
+              </div>
+          </div>
+          <!-- Project Item 3 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="project-item text-center">
+                  <img src="path/to/project3-icon.png" alt="Project 3" class="project-icon mb-3">
+                  <h4>PayBox</h4>
+                  <p>A fintech app to manage digital payments seamlessly.</p>
+              </div>
+          </div>
+          <!-- Add more project items as needed -->
+      </div>
+  </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+      <h2 class="text-center mb-5">Interested in Working Together?</h2>
+      <p class="text-center mb-4">Let's build something amazing together. Contact me below.</p>
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+              <form>
+                  <div class="form-group mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group mb-3">
+                      <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="form-group mb-4">
+                      <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                  </div>
+                  <div class="text-center">
+                      <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

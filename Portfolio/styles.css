@@ -1,0 +1,268 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100%;
+  }
+  body{
+    font-family: 'Poppins', sans-serif; /* Modern font from Google Fonts */
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: #333;
+    scroll-behavior: smooth;
+  }
+
+  @media (max-width: 767.98px) {
+    body {
+        padding-top: 70px; /* Adjust based on your navbar height */
+    }
+}
+
+  .main-section {
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  
+/* Navbar Custom Styling */
+.navbar, .navbar.fixed-top {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ece9f1; /* Navbar background color */
+  color: #333;
+}
+
+.navbar.fixed-top {
+  background: linear-gradient(to right, #a3b8d9, #dfe7fd) /* Light gray-blue to pastel blue */ !important; /* Fixed navbar background color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #333;
+  transition: color 0.3s ease;
+  padding: auto;
+  padding-left: 4px;
+  margin-right: 20px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #6c63ff; /* Change to primary color */
+}
+
+/* Header Section on Left */
+
+
+.header-section h1 {
+  font-size: 2.5em;
+  color: #111010;
+}
+
+.header-section .highlight {
+  color: #0c0c0c;
+}
+
+.header-section p {
+  font-size: 1.2em;
+  color: #121111;
+}
+
+.header-section .btn-primary {
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.header-section .btn-primary:hover {
+  background-color: #e44e40;
+  border-color: #e44e40;
+}
+
+/* About Me Section on Right */
+.about-section h2 {
+  color: #333;
+  font-size: 1.7em;
+}
+
+.about-section p {
+  color: #555;
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 992px) {
+  .main-section {
+    flex-direction: column;
+  }
+
+  .header-section, .about-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-section h1, .about-section h2 {
+    font-size: 2em;
+  }
+}
+
+  
+  /* Keyframe for Fade In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+  /* Skills Section Styling */
+.skills-section {
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Soft purple to light blue gradient */
+    color: #333;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.skill-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.skill-item h4 {
+  font-size: 1.25rem;
+  color: #6c63ff; /* Adjust to your primary color */
+  margin: 15px 0 10px;
+}
+
+.skill-item p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+  /* Projects Section Styling */
+.projects-section {
+  background-color: #f2f2f2;
+  background: linear-gradient(135deg, #fddb92, #d1fdff); /* Warm pink to light blue gradient */
+  color: #333;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.project-item h4 {
+  font-size: 1.25rem;
+  color: #6c63ff; /* Adjust to your primary color */
+  margin: 15px 0 10px;
+}
+
+.project-item p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+  
+  /* Contact Section Styling */
+.contact-section {
+  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #d3cce3, #e9e4f0); /* Gray to lavender gradient */
+    color: #333;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-section p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #6c63ff; /* Customize with your primary color */
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5548d1;
+  transform: translateY(-3px);
+}
+
+  
