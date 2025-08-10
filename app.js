@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeContactForm();
     initializeScrollEffects();
     initializeAnimations();
-    initializeCopyEmail();
 });
 
 // Navigation functionality with proper offset calculations and working smooth scroll
@@ -627,45 +626,7 @@ function submitForm() {
 }
 
 // Copy email functionality
-function initializeCopyEmail() {
-    console.log('Initializing copy email...');
-    const copyEmailBtn = document.getElementById('copy-email');
-    if (!copyEmailBtn) {
-        console.log('Copy email button not found');
-        return;
-    }
-    
-    const email = copyEmailBtn.getAttribute('data-email');
-    
-    copyEmailBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('Copy email clicked');
-        
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(email).then(() => {
-                const copyText = this.querySelector('.copy-text');
-                const successText = this.querySelector('.copy-success');
-                
-                if (copyText && successText) {
-                    copyText.style.display = 'none';
-                    successText.style.display = 'inline';
-                    
-                    setTimeout(() => {
-                        copyText.style.display = 'inline';
-                        successText.style.display = 'none';
-                    }, 2000);
-                }
-                
-                showNotification('Email address copied to clipboard!', 'success');
-            }).catch(() => {
-                showNotification('Failed to copy email. Please try selecting the text manually.', 'error');
-            });
-        } else {
-            // Fallback for browsers that don't support clipboard API
-            showNotification('Email: ' + email, 'info');
-        }
-    });
-}
+
 
 // Show notification
 function showNotification(message, type = 'info') {
