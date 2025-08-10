@@ -238,7 +238,7 @@ function initializeHeroAnimations() {
         return;
     }
     
-    const text = "Full-Stack Web Developer Specializing in Python & Django";
+    const text = "Web Developer Specializing in Python & Django";
     let index = 0;
     
     typingElement.textContent = '';
