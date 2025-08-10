@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket Dhotre - Python & Django Web Developer</title>
+    <meta name="description"
+        content="Full-Stack Web Developer Specializing in Python & Django - Creating robust, scalable web solutions">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sanket Portfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-elements">
+            <div class="floating-element" style="--delay: 0s; --duration: 8s;">🐍</div>
+            <div class="floating-element" style="--delay: 2s; --duration: 10s;">⚡</div>
+            <div class="floating-element" style="--delay: 4s; --duration: 12s;">🚀</div>
+            <div class="floating-element" style="--delay: 6s; --duration: 9s;">💻</div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Sanket Dhotre</h1>
+                <h2 class="hero-subtitle typing-animation" id="typing-text">Web Developer Specializing in
+                    Python & Django</h2>
+                <p class="hero-description">Crafting Robust Web Solutions with Python & Django</p>
+                <div class="tech-stack">
+                    <div class="tech-badge" style="--delay: 0.2s;">
+                        <span class="tech-icon">🐍</span>
+                        Python
+                    </div>
+                    <div class="tech-badge" style="--delay: 0.4s;">
+                        <span class="tech-icon">⚡</span>
+                        Django
+                    </div>
+                    <div class="tech-badge" style="--delay: 0.6s;">
+                        <span class="tech-icon">🔗</span>
+                        REST APIs
+                    </div>
+                    <div class="tech-badge" style="--delay: 0.8s;">
+                        <span class="tech-icon">🗃️</span>
+                        PostgreSQL
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn--primary btn--lg">Get In Touch</a>
+                    <button id="copy-email" class="btn btn--outline btn--lg" data-email="dhotresanket6@gmail.com">
+                        <span class="copy-text">Copy Email</span>
+                        <span class="copy-success" style="display: none;">Email Copied!</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-bio">I'm a passionate full-stack web developer with 5+ years of experience building
+                        scalable web applications using Python and Django. I specialize in creating efficient backend
+                        systems, RESTful APIs, and user-friendly interfaces that solve real-world problems.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">Pune, Maharashtra</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">dhotresanket6@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">+91 9921087329</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Status:</span>
+                            <span class="detail-value">Available for freelance projects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h3 class="skills-title">Technical Expertise</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress python-skill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Django</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress django-skill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Django REST Framework</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress drf-skill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress postgres-skill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress js-skill"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress html-skill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress git-skill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web-app">Web Apps</button>
+                <button class="filter-btn" data-filter="api">APIs</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                                alt="Mr.Doc">
+                            <div class="project-overlay">
+                                <button class="btn btn--primary view-details" data-project="0">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Mr.Doc Ai Chatbot</h3>
+                            <p class="project-description">Mr.Doc is an AI-powered mental health web app that offers
+                                empathetic, conversational support to users. It’s built using React for the frontend and
+                                Django REST Framework for the backend, with deployment on Vercel for fast and secure
+                                performance.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django REST Framework</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/sanket180/Mr.Doc" target="_blank"
+                                    class="project-link">GitHub</a>
+                                <a href="https://mr-doc-23wi.vercel.app/" target="_blank" class="project-link">Live
+                                    Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="api">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.freepik.com/premium-photo/notebook-with-toolls-notes-about-blog-concept_132358-752.jpg?size=626&ext=jpg&ga=GA1.1.1122057081.1697127890&semt=ais?w=600&h=400&fit=crop"
+                                alt="Blog API">
+                            <div class="project-overlay">
+                                <button class="btn btn--primary view-details" data-project="1">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Blog API</h3>
+                            <p class="project-description">Blog-Api-DRF is a RESTful API for managing blog posts, built
+                                using Django REST Framework. It includes structured endpoints for user accounts, post
+                                creation, and schema documentation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django REST Framework</span>
+
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/sanket180/Blog-Api-DRF" target="_blank"
+                                    class="project-link">GitHub</a>
+                                <!-- <a href="" target="_blank"
+                                    class="project-link">Live Demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop"
+                                alt="Todo List App">
+                            <div class="project-overlay">
+                                <button class="btn btn--primary view-details" data-project="2">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">TodoListApp</h3>
+                            <p class="project-description">TodoListApp-Django is a simple yet secure task management web
+                                app featuring user authentication, login, and registration. Built entirely with Django,
+                                it allows users to manage personal to-do lists while ensuring account-level data
+                                protection and session control
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/sanket180/TodoListApp-Django" target="_blank"
+                                    class="project-link">GitHub</a>
+                                <a href="https://sanketdhotre.pythonanywhere.com/auth/login/?next=/" target="_blank"
+                                    class="project-link">Live
+                                    Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's build something amazing together</h3>
+                    <p>I'm always interested in new opportunities and exciting Python/Django projects. Whether you're a
+                        company looking to hire, or you need a reliable developer for your next web application, I'd
+                        love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:hello@alexjohnson.dev">dhotresanket6@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <a href="tel:+15551234567">+91 9921087329</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location:</span>
+                            <span>Pune, Maharashtra</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Status:</span>
+                            <span class="status status--success">Available for freelance projects</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/sanket180" target="_blank" class="social-link github">
+                            <span class="social-icon">💻</span> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/sanket-dhotre-0b47a4244/" target="_blank"
+                            class="social-link linkedin">
+                            <span class="social-icon">💼</span> LinkedIn
+                        </a>
+
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                        <div class="error-message" id="subject-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sanket Dhotre. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/sanket180" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sanket-dhotre-0b47a4244/" target="_blank">LinkedIn</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
